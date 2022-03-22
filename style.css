@@ -4,6 +4,15 @@
 
 .uc-holder{
 	padding: 15px;
-	background-color: #FFC600;
+	background-color:#DFC145;
 	font-family: "abril-fatface";
+	
+}
+body {
+	display: inline-block;
+	
+}
+body img {
+	float: left;
+	
 }
