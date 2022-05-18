@@ -27,22 +27,19 @@ nav img {
 }
 .nav-links ul li{
 	list-style: none;
-	display: inline-block;
-	padding: 8px 12px;
-	position: relative;	
+	margin: 0 25px;
+	display: flex;	
 }
 .nav-links ul li a i{
 	font-size: 35px;
 	color: #333;
 	transition: 0.5s;
 	padding-right: 14px;
-	
 }
 .nav-links ul li a span{
 	color: #333;
 	letter-spacing: 2px;
 	transition: 0.5s;
-	
 }
 .nav-link ul li a{
 	display: flex;
@@ -64,7 +61,7 @@ nav img {
 	width: 20;
 	background: #cecece;
 	transition: 0.5s;
-	transform: skewY(-45deg)	
+	transform: skewY(-45deg);	
 }
 .nav-link ul li a::after{
 	content: '';
@@ -75,9 +72,5 @@ nav img {
 	width: 100%;
 	background: #cecece;
 	transition: 0.5s;
-	transform: skewX(-45deg)	
+	transform: skewX(-45deg);	
 }
-
-
-
-
