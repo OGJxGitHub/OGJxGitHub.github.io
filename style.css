@@ -23,7 +23,7 @@ nav img {
 }
 .nav-links {
 	flex: 1;
-	text-align: right;	
+	text-align: right;
 }
 .nav-links ul li{
 	list-style: none;
@@ -64,8 +64,18 @@ nav img {
 	width: 20;
 	background: #cecece;
 	transition: 0.5s;
-	transform: skewY(-45deg)
-		
+	transform: skewY(-45deg)	
+}
+.nav-link ul li a::after{
+	content: '';
+	position: absolute;
+	bottom: -20px;
+	left: -10px;
+	height: 20px;
+	width: 100%;
+	background: #cecece;
+	transition: 0.5s;
+	transform: skewX(-45deg)	
 }
 
 
