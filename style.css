@@ -11,10 +11,11 @@
 	background-position: center;
 	background-size: cover;
 	position: relative;
+	flex-direction: column;
 }
 nav {
 	display: flex;
-	padding: 3% 6%;
+	padding: 3% 1%;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -28,7 +29,7 @@ nav img {
 .nav-links ul li {
 	list-style: none;
 	display: inline-block;
-	padding: 30px 18px;
+	padding: 0px 18px;
 	position: relative;
 }
 .nav-links ul li a i{
@@ -87,7 +88,6 @@ nav img {
 	background: #00b27d;
 	transform: translate(15px, -15px);
 	box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5)
-
 }
 .nav-links ul li:hover a::before{
 	background: #008037;
@@ -95,14 +95,6 @@ nav img {
 .nav-links ul li:hover a::after{
 	background: #3ab78d;
 }
-
-
-.header svg{
-	font-size: 150px;
-	font-family: 'League Spartan', sans-serif;
-	font-weight: 600;
-}
-
 .header .copy {
 	fill: none;
 	stroke: #fff;
@@ -135,4 +127,40 @@ nav img {
 .header .copy5{
 	stroke: #85553c;
 	animation-delay: -5s;
+}
+.text-box {
+	width: 90%;
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	flex-direction: column;
+}
+.text-box svg {
+	font-size: 250px;
+	font-family: 'League Spartan', sans-serif;
+	font-weight: 100;
+}
+.text-box p {
+	margin-top: 40px;
+	color: #fff;
+	font-family: 'League Spartan', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.hero-btn{
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 24px 68px;
+	font-family: 'League Spartan', sans-serif;
+	font-size: 20px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
 }
