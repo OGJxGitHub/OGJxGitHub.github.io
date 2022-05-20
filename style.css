@@ -14,64 +14,125 @@
 }
 nav {
 	display: flex;
-	padding: 2% 6%;
-	just-content: space-between;
+	padding: 3% 6%;
+	justify-content: space-between;
 	align-items: center;
 }
 nav img {
 	width: 150px;
 }
-.nav-links {
+.nav-links ul {
 	flex: 1;
 	text-align: right;
 }
-.nav-links ul li{
+.nav-links ul li {
 	list-style: none;
 	display: inline-block;
-	padding: 8px 12px;
-	position: relative;	
+	padding: 60px 18px;
+	position: relative;
 }
 .nav-links ul li a i{
-	font-size: 35px;
-	color: #333;
+	font-size: 18px;
+	color: #00b27d;
 	transition: 0.5s;
-	padding-right: 14px;
+	padding-right: 7px;
 }
 .nav-links ul li a span{
-	color: #333;
-	letter-spacing: 2px;
+	color: #00b27d;
+	font-weight: 300;
+	font-family: 'League Spartan', sans-serif;
+	letter-spacing: 1px;
 	transition: 0.5s;
 }
-.nav-link ul li a{
+.nav-links ul li a{
 	display: flex;
 	align-items: center;
 	text-decoration: none;
-	width: 210px;
-	height: 80px;
+	width: 130px;
+	height: 45px;
 	background: #fff;
-	padding-left: 20px;
+	padding-left: 10px;
 	position: relative;
-	transition: 0.5s;	
-}
-.nav-link ul li a::before{
-	content: '';
-	position: absolute;
-	top: 10px;
-	left: -20px;
-	height: 100%;
-	width: 20;
-	background: #cecece;
 	transition: 0.5s;
-	transform: skewY(-45deg);	
 }
-.nav-link ul li a::after{
+.nav-links ul li a::before{
 	content: '';
 	position: absolute;
-	bottom: -20px;
+	top: 5px;
 	left: -10px;
-	height: 20px;
-	width: 100%;
-	background: #cecece;
+	height: 100%;
+	width: 10px;
+	background: #d9d9d9;
 	transition: 0.5s;
-	transform: skewX(-45deg);	
+	transform: skewY(-45deg);
+}
+.nav-links ul li a::after{
+	content: '';
+	position: absolute;
+	bottom: -10px;
+	left: -5px;
+	height: 10px;
+	width: 100%;
+	background: #d9d9d9;
+	transition: 0.5s;
+	transform: skewX(-45deg);
+}
+.nav-links ul li:hover i{
+	color: #fff;
+}
+.nav-links ul li:hover span{
+	color: #fff;
+}
+.nav-links ul li:hover a{
+	background: #00b27d;
+	transform: translate(15px, -15px);
+	box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5)
+
+}
+.nav-links ul li:hover a::before{
+	background: #008037;
+}
+.nav-links ul li:hover a::after{
+	background: #3ab78d;
+}
+
+
+.header svg{
+	font-size: 150px;
+	font-family: 'League Spartan', sans-serif;
+	font-weight: 600;
+}
+
+.header .copy {
+	fill: none;
+	stroke: #fff;
+	stroke-width: 3px;
+	stroke-dasharray: 8% 30%;
+	stroke-dashoffset: 0%;
+	animation: textanimation 7s linear infinite;
+}
+@keyframes textanimation {
+	100%{
+		stroke-dashoffset: -35%;
+	}
+}
+.header .copy1{
+	stroke: #fff;
+	animation-delay: -1s;
+}
+.header .copy2{
+	stroke: #3ab78d;
+	animation-delay: -2s;
+}
+.header .copy3{
+	stroke: #00b27d;
+	animation-delay: -3s;
+}
+.header .copy4{
+	stroke: #008037;
+	animation-delay: -4s;
+}
+.header .copy5{
+	stroke: #85553c;
+	animation-delay: -5s;
 }
